@@ -343,19 +343,9 @@ A：不是必须，但建议准备2~3个备用节点，防止主节点被墙或�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 是什么？它主要有什么用途？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 多路复用在短连接中优势是什么？</h5></div>
     <div class="panel-body">
-        Clash 是一个跨平台的代理客户端，支持多种代理协议，如 Vmess、Vless、Trojan 和 Shadowsocks 等。它主要用于分流管理、网络代理和科学上网，用户可以通过配置文件灵活控制网络流量，实现不同网站或应用走不同代理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 能否兼容最新的 iOS 系统？</h5></div>
-    <div class="panel-body">
-        Potatso Lite 更新频率较低，在新版本 iOS 上可能出现兼容性问题。若遇到无法连接或闪退情况，建议升级至其他活跃维护的客户端如 Shadowrocket 或 Quantumult X。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度和便利性？</h5></div>
-    <div class="panel-body">
-        PAC 模式根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高网页和视频访问速度与稳定性，减少操作错误导致的访问失败。<hr />    </div>
+        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接场景，如游戏和即时通讯，提升吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>QuantumultX 支持哪些类型的重写脚本？</h5></div>
@@ -363,19 +353,9 @@ A：不是必须，但建议准备2~3个备用节点，防止主节点被墙或�
         QuantumultX 支持 JavaScript 脚本，可修改请求头、响应内容、自动跳转、广告屏蔽和定制流量处理。结合策略组，可实现高度个性化的网络访问控制和优化。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 多路复用在短连接中优势是什么？</h5></div>
+    <div class="panel-heading"><h5>Netch 无法代理游戏怎么办？</h5></div>
     <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接场景，如游戏和即时通讯，提升吞吐量和连接稳定性，优化网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
-    <div class="panel-body">
-        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 DNS 模块如何提升解析速度？</h5></div>
-    <div class="panel-body">
-        V2Ray 内置 DNS 模块支持并行解析，可同时请求多个上游 DNS 服务器。用户可配置本地优先解析或远程解析策略，从而减少域名污染与延迟问题。<hr />    </div>
+        若 Netch 无法代理游戏，需检查游戏进程是否被正确捕获，以及防火墙是否阻止了 TUN 模式。可尝试以管理员身份运行程序，或切换为 Socks 模式重新导入节点。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 节点订阅失败如何处理？</h5></div>
@@ -383,14 +363,34 @@ A：不是必须，但建议准备2~3个备用节点，防止主节点被墙或�
         首先确认订阅 URL 是否有效，并确保网络连接正常。可手动刷新或重新添加订阅链接，保证节点列表最新。结合策略组使用，确保稳定科学上网体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 是否支持多出口自动选择？</h5></div>
+    <div class="panel-heading"><h5>Clash 是什么？它主要有什么用途？</h5></div>
     <div class="panel-body">
-        支持。通过配置路由规则和策略组，Sing-box 可以自动判断流量类型并选择最佳出口，实现智能分流和多节点负载均衡，提高访问效率。<hr />    </div>
+        Clash 是一个跨平台的代理客户端，支持多种代理协议，如 Vmess、Vless、Trojan 和 Shadowsocks 等。它主要用于分流管理、网络代理和科学上网，用户可以通过配置文件灵活控制网络流量，实现不同网站或应用走不同代理。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 无法代理游戏怎么办？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的 DNS 模块如何提升解析速度？</h5></div>
     <div class="panel-body">
-        若 Netch 无法代理游戏，需检查游戏进程是否被正确捕获，以及防火墙是否阻止了 TUN 模式。可尝试以管理员身份运行程序，或切换为 Socks 模式重新导入节点。    </div>
+        V2Ray 内置 DNS 模块支持并行解析，可同时请求多个上游 DNS 服务器。用户可配置本地优先解析或远程解析策略，从而减少域名污染与延迟问题。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 能否兼容最新的 iOS 系统？</h5></div>
+    <div class="panel-body">
+        Potatso Lite 更新频率较低，在新版本 iOS 上可能出现兼容性问题。若遇到无法连接或闪退情况，建议升级至其他活跃维护的客户端如 Shadowrocket 或 Quantumult X。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
+    <div class="panel-body">
+        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度和便利性？</h5></div>
+    <div class="panel-body">
+        PAC 模式根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高网页和视频访问速度与稳定性，减少操作错误导致的访问失败。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 是否支持多出口自动选择？</h5></div>
+    <div class="panel-body">
+        支持。通过配置路由规则和策略组，Sing-box 可以自动判断流量类型并选择最佳出口，实现智能分流和多节点负载均衡，提高访问效率。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -419,16 +419,16 @@ A：不是必须，但建议准备2~3个备用节点，防止主节点被墙或�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-14-free-subscribe-node.htm" title="节点分享 | 10月14日22.3M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月14日22.3M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-11-clash-node.htm" title="节点分享 | 10月11日22.6M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月11日22.6M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-31-clash-node-daily-updates.htm" title="节点分享 | 10月31日19.5M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月31日19.5M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-26-free-v2ray.htm" title="节点分享 | 10月26日22.1M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月26日22.1M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-2-clash-node-daily-updates.htm" title="节点分享 | 11月2日18.3M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 11月2日18.3M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-22-clash-node.htm" title="节点分享 | 10月22日19.5M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月22日19.5M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-18-node-share-links.htm" title="节点分享 | 10月18日21M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月18日21M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-20-clash-windows.htm" title="节点分享 | 10月20日19.5M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月20日19.5M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-5-free-high-speed-nodes.htm" title="节点分享 | 10月5日18.4M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月5日18.4M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-4-clash-windows.htm" title="节点分享 | 10月4日21.1M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月4日21.1M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-3-node-share.htm" title="节点分享 | 11月3日19.1M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 11月3日19.1M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-2-clash-node-daily-updates.htm" title="节点分享 | 11月2日18.3M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 11月2日18.3M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-3-free-ssr-node.htm" title="节点分享 | 10月3日22.6M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月3日22.6M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-1-clash-node.htm" title="节点分享 | 11月1日21.9M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 11月1日21.9M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-6-free-node-subscribe.htm" title="节点分享 | 11月6日18.6M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 11月6日18.6M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-6-free-subscribe-node.htm" title="节点分享 | 10月6日22.7M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月6日22.7M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-19-clash-windows.htm" title="节点分享 | 10月19日18.2M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月19日18.2M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-8-free-shadowrocket-node.htm" title="节点分享 | 10月8日22.7M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 10月8日22.7M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -440,7 +440,7 @@ A：不是必须，但建议准备2~3个备用节点，防止主节点被墙或�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
