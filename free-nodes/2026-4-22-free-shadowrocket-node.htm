@@ -291,19 +291,9 @@ Clash for Android就像一把锋利的网络利剑，劈开重重封锁，让信
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 策略组如何提升游戏和视频体验？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
     <div class="panel-body">
-        通过策略组将游戏、视频和浏览器流量分配到低延迟、高带宽节点，Surfboard 可自动切换最优节点，减少延迟和卡顿，提高整体网络体验和访问速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的流量分流如何与防火墙配合使用？</h5></div>
-    <div class="panel-body">
-        通过 V2Ray 的路由规则，可将指定流量通过代理出口，而防火墙限制其他流量直连。结合防火墙规则可以实现对内部网络访问和外部代理流量的精准控制。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何优化视频播放？</h5></div>
-    <div class="panel-body">
-        通过分流规则，将流媒体域名匹配到高速节点，而其他流量走备用节点。保证视频播放流畅，同时节约带宽资源，提升整体网络速度和体验。<hr />    </div>
+        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 是否兼容 Clash 配置文件？</h5></div>
@@ -311,24 +301,19 @@ Clash for Android就像一把锋利的网络利剑，劈开重重封锁，让信
         部分兼容。Sing-box 支持从 Clash 订阅转换工具导入节点，但配置语法略有不同。建议使用第三方订阅转换器，如 sub-converter，将 Clash 格式转换为 Sing-box JSON 格式使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的 TCP/UDP 分流适合哪些应用？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何优化视频播放？</h5></div>
     <div class="panel-body">
-        TCP 分流适合网页、下载和视频播放，UDP 分流适合游戏、语音和实时视频。Netch 可同时代理 TCP 和 UDP 流量，实现精准分流，保证不同应用的最佳性能。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
-    <div class="panel-body">
-        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 outbound freedom 模式有什么作用？</h5></div>
-    <div class="panel-body">
-        freedom 是直连模块，可用于分流策略中实现部分流量直连。用户可在 routing 中设置匹配规则，将国内域名或局域网 IP 指向 freedom 出口，从而减少代理开销和延迟。<hr />    </div>
+        通过分流规则，将流媒体域名匹配到高速节点，而其他流量走备用节点。保证视频播放流畅，同时节约带宽资源，提升整体网络速度和体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 如何实现节点延迟自动切换？</h5></div>
     <div class="panel-body">
         Nekoray 支持配置策略组（Policy Group），用户可设置 URL 测试或周期检测机制，根据延迟自动选择最优节点。此功能能提升稳定性，尤其适合多线路机场订阅用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 的 TCP/UDP 分流适合哪些应用？</h5></div>
+    <div class="panel-body">
+        TCP 分流适合网页、下载和视频播放，UDP 分流适合游戏、语音和实时视频。Netch 可同时代理 TCP 和 UDP 流量，实现精准分流，保证不同应用的最佳性能。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 能否自动更新订阅？</h5></div>
@@ -338,7 +323,22 @@ Clash for Android就像一把锋利的网络利剑，劈开重重封锁，让信
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 如何安装？</h5></div>
     <div class="panel-body">
-        Sing-box 支持多平台，包括 Windows、Linux、macOS 和 Android。可从官方 GitHub 页面下载预编译版本或通过命令行安装。配置文件采用 JSON 格式，兼容多种协议配置。    </div>
+        Sing-box 支持多平台，包括 Windows、Linux、macOS 和 Android。可从官方 GitHub 页面下载预编译版本或通过命令行安装。配置文件采用 JSON 格式，兼容多种协议配置。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的流量分流如何与防火墙配合使用？</h5></div>
+    <div class="panel-body">
+        通过 V2Ray 的路由规则，可将指定流量通过代理出口，而防火墙限制其他流量直连。结合防火墙规则可以实现对内部网络访问和外部代理流量的精准控制。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的 outbound freedom 模式有什么作用？</h5></div>
+    <div class="panel-body">
+        freedom 是直连模块，可用于分流策略中实现部分流量直连。用户可在 routing 中设置匹配规则，将国内域名或局域网 IP 指向 freedom 出口，从而减少代理开销和延迟。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 策略组如何提升游戏和视频体验？</h5></div>
+    <div class="panel-body">
+        通过策略组将游戏、视频和浏览器流量分配到低延迟、高带宽节点，Surfboard 可自动切换最优节点，减少延迟和卡顿，提高整体网络体验和访问速度。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -367,16 +367,16 @@ Clash for Android就像一把锋利的网络利剑，劈开重重封锁，让信
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-2-free-subscribe-node.htm" title="节点分享 | 4月2日22.8M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月2日22.8M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-24-free-ssr-node.htm" title="节点分享 | 4月24日22.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月24日22.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-18-free-v2ray.htm" title="节点分享 | 3月18日20.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 3月18日20.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-20-free-ssr-subscribe.htm" title="节点分享 | 3月20日19.6M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 3月20日19.6M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-13-free-subscribe-node.htm" title="节点分享 | 4月13日20.3M/S|免费Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月13日20.3M/S|免费Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-4-free-ssr-node.htm" title="节点分享 | 5月4日19.1M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 5月4日19.1M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-29-clash-windows.htm" title="节点分享 | 4月29日20.6M/S|免费Shadowrocket节点/Trojan节点/Clash节点/SSR节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月29日20.6M/S|免费Shadowrocket节点/Trojan节点/Clash节点/SSR节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-22-free-shadowrocket-node.htm" title="节点分享 | 4月22日19.5M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月22日19.5M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-17-shadowrocket-node.htm" title="节点分享 | 4月17日18M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月17日18M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-21-node-share-links.htm" title="节点分享 | 4月21日23M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月21日23M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-19-free-v2ray-subscribe.htm" title="节点分享 | 4月19日21.8M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月19日21.8M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-16-free-v2ray-subscribe.htm" title="节点分享 | 3月16日20.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 3月16日20.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-9-clash-node.htm" title="节点分享 | 4月9日19.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月9日19.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-27-clash-windows.htm" title="节点分享 | 3月27日18M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 3月27日18M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-11-clash-v2ray-ss-ssr.htm" title="节点分享 | 5月11日21.3M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 5月11日21.3M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-free-v2ray.htm" title="节点分享 | 5月2日19.4M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 5月2日19.4M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-18-free-node-subscribe-links.htm" title="节点分享 | 4月18日20.5M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月18日20.5M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-30-node-share-links.htm" title="节点分享 | 4月30日20.7M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 4月30日20.7M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-7-free-ssr-node.htm" title="节点分享 | 5月7日19.8M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 5月7日19.8M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -388,10 +388,10 @@ Clash for Android就像一把锋利的网络利剑，劈开重重封锁，让信
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
