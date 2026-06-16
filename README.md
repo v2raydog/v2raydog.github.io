@@ -1,4 +1,4 @@
-# 节点分享 | 6月9日19.1M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐  更新时间 2026-06-09 09:19:55
+# 节点分享 | 6月16日18.9M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐  更新时间 2026-06-16 09:51:44
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://v2raydog.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://v2raydog.github.io/uploads/2026/06/0-20260609.yaml
-- https://v2raydog.github.io/uploads/2026/06/1-20260609.yaml
-- https://v2raydog.github.io/uploads/2026/06/2-20260609.yaml
-- https://v2raydog.github.io/uploads/2026/06/3-20260609.yaml
-- https://v2raydog.github.io/uploads/2026/06/4-20260609.yaml
+- https://v2raydog.github.io/uploads/2026/06/0-20260616.yaml
+- https://v2raydog.github.io/uploads/2026/06/1-20260616.yaml
+- https://v2raydog.github.io/uploads/2026/06/2-20260616.yaml
+- https://v2raydog.github.io/uploads/2026/06/3-20260616.yaml
+- https://v2raydog.github.io/uploads/2026/06/4-20260616.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://v2raydog.github.io/uploads/2026/06/0-20260609.txt
-- https://v2raydog.github.io/uploads/2026/06/1-20260609.txt
-- https://v2raydog.github.io/uploads/2026/06/2-20260609.txt
-- https://v2raydog.github.io/uploads/2026/06/3-20260609.txt
-- https://v2raydog.github.io/uploads/2026/06/4-20260609.txt
+- https://v2raydog.github.io/uploads/2026/06/0-20260616.txt
+- https://v2raydog.github.io/uploads/2026/06/1-20260616.txt
+- https://v2raydog.github.io/uploads/2026/06/2-20260616.txt
+- https://v2raydog.github.io/uploads/2026/06/3-20260616.txt
+- https://v2raydog.github.io/uploads/2026/06/4-20260616.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://v2raydog.github.io/uploads/2026/06/20260609.json
+- https://v2raydog.github.io/uploads/2026/06/20260616.json
 
 ## 更多Clash节点订阅 ：
 
