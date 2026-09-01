@@ -261,29 +261,14 @@ shadowrocket允许用户自定义DNS服务器，如使用Google DNS、Cloudflare
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何实现？</h5></div>
+    <div class="panel-heading"><h5>VMess MUX 功能如何改善短连接延迟？</h5></div>
     <div class="panel-body">
-        用户添加订阅 URL 后，Nekoray 会定期下载最新节点列表并替换旧节点。保持节点列表最新可减少手动维护，保证节点可用性和网络连接稳定性，提升使用体验。<hr />    </div>
+        VMess MUX 多路复用可以将多个短连接共享同一 TCP 或 QUIC 隧道，减少重复握手和连接延迟，特别适合游戏、即时通讯或频繁请求的场景，有效提升响应速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 混淆方式如何提升抗封锁能力？</h5></div>
     <div class="panel-body">
         混淆方式可将流量伪装成正常 HTTPS 或 HTTP 数据，降低被 DPI 检测风险。合理选择协议和混淆组合，可以提升节点稳定性和长期可用性，确保科学上网顺畅。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 伪装域名如何选择以提升隐蔽性？</h5></div>
-    <div class="panel-body">
-        伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名配置需要注意什么？</h5></div>
-    <div class="panel-body">
-        伪装域名必须真实可访问并有有效证书，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁风险，保证节点长期稳定可用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆和协议组合如何选择？</h5></div>
-    <div class="panel-body">
-        根据网络封锁情况选择适合的混淆和协议组合，例如 tls1.2_ticket_auth 模拟 HTTPS 流量。不同组合对抗 DPI 和封锁能力不同，需要测试后选择最稳定和高效的方案。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 如何通过规则文件优化节点分流？</h5></div>
@@ -296,19 +281,34 @@ shadowrocket允许用户自定义DNS服务器，如使用Google DNS、Cloudflare
         SSR 支持多端口配置以复用服务，但若端口过多或设置冲突，可能被扫描工具识别或误判为异常服务。建议保持配置简洁，并合理分配端口范围以减少暴露风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 的 Reality 模式需要额外配置吗？</h5></div>
+    <div class="panel-heading"><h5>SSR 的混淆和协议组合如何选择？</h5></div>
     <div class="panel-body">
-        Reality 模式需要配置伪装域名、公钥和服务器指纹等参数。正确配置后，可有效隐藏流量特征，提高在高封锁环境下的可用性和安全性。<hr />    </div>
+        根据网络封锁情况选择适合的混淆和协议组合，例如 tls1.2_ticket_auth 模拟 HTTPS 流量。不同组合对抗 DPI 和封锁能力不同，需要测试后选择最稳定和高效的方案。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess MUX 功能如何改善短连接延迟？</h5></div>
+    <div class="panel-heading"><h5>Trojan 的伪装域名配置需要注意什么？</h5></div>
     <div class="panel-body">
-        VMess MUX 多路复用可以将多个短连接共享同一 TCP 或 QUIC 隧道，减少重复握手和连接延迟，特别适合游戏、即时通讯或频繁请求的场景，有效提升响应速度。<hr />    </div>
+        伪装域名必须真实可访问并有有效证书，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁风险，保证节点长期稳定可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 伪装域名如何选择以提升隐蔽性？</h5></div>
+    <div class="panel-body">
+        伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何实现？</h5></div>
+    <div class="panel-body">
+        用户添加订阅 URL 后，Nekoray 会定期下载最新节点列表并替换旧节点。保持节点列表最新可减少手动维护，保证节点可用性和网络连接稳定性，提升使用体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的混淆和协议设置如何选择才能绕过封锁？</h5></div>
     <div class="panel-body">
-        选择模拟 HTTPS 的混淆方式如 tls1.2_ticket_auth，并搭配 AEAD 或协议插件，可以有效隐藏流量特征，降低被封锁风险。不同网络环境需测试选择最优组合。    </div>
+        选择模拟 HTTPS 的混淆方式如 tls1.2_ticket_auth，并搭配 AEAD 或协议插件，可以有效隐藏流量特征，降低被封锁风险。不同网络环境需测试选择最优组合。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS 的 Reality 模式需要额外配置吗？</h5></div>
+    <div class="panel-body">
+        Reality 模式需要配置伪装域名、公钥和服务器指纹等参数。正确配置后，可有效隐藏流量特征，提高在高封锁环境下的可用性和安全性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -356,16 +356,16 @@ shadowrocket允许用户自定义DNS服务器，如使用Google DNS、Cloudflare
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-10-clash-node.htm" title="节点分享 | 8月10日22.1M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月10日22.1M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-15.htm" title="节点分享 | 8月15日22.3M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月15日22.3M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-free-clash.htm" title="节点分享 | 8月6日21.5M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月6日21.5M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-19.htm" title="节点分享 | 8月19日21.8M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月19日21.8M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-8-27.htm" title="节点分享 | 8月27日22M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月27日22M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-8-17.htm" title="节点分享 | 8月17日20M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月17日20M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-8-21.htm" title="节点分享 | 8月21日20M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月21日20M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-7-29.htm" title="节点分享 | 7月29日19.8M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 7月29日19.8M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-19-shadowrocket-node.htm" title="节点分享 | 7月19日19.3M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 7月19日19.3M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-8-5.htm" title="节点分享 | 8月5日21.6M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月5日21.6M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-22-free-ssr-subscribe.htm" title="节点分享 | 7月22日22.4M/S|免费SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 7月22日22.4M/S|免费SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-9.htm" title="节点分享 | 8月9日18.7M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月9日18.7M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-7-20-clash-node.htm" title="节点分享 | 7月20日20.4M/S|免费Clash节点/Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 7月20日20.4M/S|免费Clash节点/Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-2-clash-node.htm" title="节点分享 | 8月2日22.7M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月2日22.7M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-20-clash-node.htm" title="节点分享 | 8月20日18.4M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月20日18.4M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-28-node-share.htm" title="节点分享 | 8月28日20.7M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月28日20.7M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-19.htm" title="节点分享 | 8月19日21.8M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月19日21.8M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-clash-node-daily-updates.htm" title="节点分享 | 8月24日21.3M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">节点分享 | 8月24日21.3M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -377,7 +377,10 @@ shadowrocket允许用户自定义DNS服务器，如使用Google DNS、Cloudflare
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">25</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">1</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
